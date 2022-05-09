@@ -1,0 +1,2 @@
+# angular-example
+Angular project
