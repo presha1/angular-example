@@ -1,0 +1,23 @@
+<mat-card>
+  <div class="login-form">
+    <h2>Login</h2>
+    <div>
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput required placeholder="Username" [formControl]="username">
+        <mat-error>Error occurred</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput required placeholder="Password" [formControl]="password">
+        <mat-error>Error occurred</mat-error>
+      </mat-form-field>
+    </div>
+
+
+    <button mat-raised-button class="submit-btn" [disabled]="!this.username.valid || !this.password.valid" (click)="onSubmit()">Submit</button>
+  </div>
+</mat-card>

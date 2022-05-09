@@ -1,0 +1,14 @@
+
+mat-card {
+  top: 30vh;
+  width: max-content;
+  margin:auto;
+}
+
+.login-form {
+  margin: 70px;
+}
+
+::ng-deep body {
+  background-image: linear-gradient(purple, black);
+}
